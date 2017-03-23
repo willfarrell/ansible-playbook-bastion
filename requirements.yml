@@ -6,5 +6,6 @@
 - name: galaxy.fail2ban
   src: https://github.com/resmo/ansible-role-fail2ban.git
 
-
+- name: galaxy.sshd
+  src: https://github.com/willfarrell/ansible-role-sshd.git
 

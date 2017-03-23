@@ -12,9 +12,8 @@
   roles:
     - update
     - galaxy.cis
-    - galaxy.fail2ban
-    - sshd
-    - docker
+    - galaxy.sshd
   # TODO - not complete - need pam replacement
   #  - google_authenticator
+  #  - galaxy.fail2ban
   #  - galaxy.firewall
