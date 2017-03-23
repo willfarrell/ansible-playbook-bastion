@@ -1,0 +1,20 @@
+---
+
+# ansible-playbook playbook.yml
+
+- hosts: bastion
+  become: yes
+  vars:
+    ssh_users:
+      - wfarrell
+    ssh_sudo_users:
+      - wfarrell
+  roles:
+    - update
+    - galaxy.cis
+    - galaxy.fail2ban
+    - sshd
+    - docker
+  # TODO - not complete - need pam replacement
+  #  - google_authenticator
+  #  - galaxy.firewall

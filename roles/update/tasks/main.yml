@@ -5,3 +5,5 @@
 
 - include: firewall.yml
   when: ansible_os_family == 'RedHat'
+
+- include: volumes.yml

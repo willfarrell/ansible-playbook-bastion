@@ -1,0 +1,14 @@
+---
+
+# TODO
+#- name: Create Mount for /var/lib/docker
+#  mount:
+#    path: /var/lib/docker
+#    src: /dev/xvda1
+#    state: mounted
+#    fstype: ext4
+
+
+# /var
+# /root
+# /home
