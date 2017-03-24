@@ -8,7 +8,8 @@ ORG_ID=f4rr3ll
 # pip install --upgrade --user awscli
 
 # install deps
-#ansible-galaxy install --roles-path=./roles -r requirements.yml
+ansible-galaxy install --roles-path=./roles -r requirements.yml
+cp -r authorized_keys roles/galaxy.sshd/files/
 
 # Decrypt
 #ansible-vault decrypt group_vars/all/secrets.yml --vault-password-file ~/.vault_password_f4rr3ll
